@@ -10,12 +10,13 @@ body {
 h1 {
   font-family: "Poppins", serif;
   color: #2c2c54;
+  font-size: 35px;
 }
 
-.container{
-  border: 1px solid #e0e0e0;
+.container {
+  border: 1px solid #ffb6c1;
   border-radius: 10px;
-  margin: 30px auto;
+  margin: 20px auto;
   padding: 20px;
   max-width: 50%;
   box-shadow: 1px 2px 10px 10px #ff634743;
@@ -24,15 +25,15 @@ h1 {
 
 .quote-section {
   font-family: "Playfair Display", serif;
-  color:#333333 ;
+  color: rgba(51, 51, 51, 0.82);
   font-weight: 500;
   background: linear-gradient(45deg, #ffb6c1, #ffdab9, #ffb6c1);
   margin: 10px 20px;
   padding: 10px 20px;
   border: 1px solid #ffb6c1;
   border-radius: 10px;
+  font-size: 20px;
 }
-
 
 .quotation-marks {
   color: #ff6347;
@@ -42,15 +43,81 @@ h1 {
 button {
   background-color: #ff7f50;
   color: #ffffff;
-  transition: all 200ms ease-out;
-
+  /* font-family: "Poopins", serif; */
+  font-weight: 100;
+  transition: all 200ms ease-in-out;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #ff7f50;
+  border-radius: 18px;
+  box-shadow: 2px 3px 5px 1px rgba(255, 127, 80, 0.612);
 }
 button:hover {
   background-color: #ff6347;
-  box-shadow: 1px 1px 5px 2px #ffa07a;
+  border-color: #ff6347;
+  box-shadow: 2px 3px 5px 1px rgba(255, 160, 122, 0.8);
+  scale: 1.06;
 }
 
-footer{
-  color: #696969;
+/* 45deg,#ff7f50 ,#ff6347*/
 
+h2 {
+  font-family: "Cinzel", serif;
+  font-size: 22px;
+  margin: 10px;
+  padding: 10px;
+  border-top: 1px solid #696969;
+}
+
+.quote-box {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0px auto;
+  justify-content: space-evenly;
+  column-gap: 10px;
+}
+
+.common-quote {
+  max-width: 25%;
+  border: 1px solid rgba(255, 127, 80, 0.300);
+  text-align: center;
+  font-family: "Poppins", serif;
+  font-size: 14px;
+  font-weight: 300;
+  /* color: black; */
+  border-radius: 6px;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 127, 80, 0.447),
+    rgba(255, 99, 71, 0.682),
+    rgba(255, 127, 80, 0.447)
+  );
+  /* background: linear-gradient(45deg, #ffdab9, #ffb6c1, #ffdab9); */
+  padding: 15px;
+  transition: all 200ms ease-in;
+}
+
+.common-quote:hover {
+  scale: 1.08;
+  box-shadow: 2px 2px 10px 0px rgba(255, 160, 122, 0.8);
+}
+
+footer {
+  color: #2c2c54;
+  font-size: 15px;
+  /* text-shadow: 1px 1px 20px #2c2c54c3; */
+}
+
+a {
+  color: #ff6347;
+  text-decoration: none;
+  font-weight: 500;
+  opacity: 90%;
+  transform: all 250ms ease-in;
+}
+
+a:hover {
+  /* text-shadow: 1px 1px 10px rgba(255, 99, 71, 0.8); */
+  text-decoration: 1.2px underline #ff6347c8;
+  opacity: 100%;
 }
