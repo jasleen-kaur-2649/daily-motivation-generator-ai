@@ -38,6 +38,10 @@ h1 {
   font-weight: 800;
 }
 
+.author-name {
+  color: #ff6347;
+}
+
 button {
   background-color: #ff7f50;
   color: #ffffff;
@@ -62,6 +66,7 @@ button:hover {
 h2 {
   font-family: "Cinzel", serif;
   font-size: 22px;
+  color: #ff6347;
   margin: 10px;
   padding: 10px;
   border-top: 1px solid #696969;
@@ -78,7 +83,7 @@ h2 {
 
 .common-quote {
   max-width: 25%;
-  border: 1px solid rgba(255, 127, 80, 0.300);
+  border: 1px solid rgba(255, 127, 80, 0.3);
   text-align: center;
   font-family: "Poppins", serif;
   font-size: 14px;
@@ -86,17 +91,36 @@ h2 {
   border-radius: 6px;
   background: linear-gradient(
     45deg,
-    rgba(255, 127, 80, 0.447),
+    rgba(255, 127, 80, 0.42),
     rgba(255, 99, 71, 0.682),
-    rgba(255, 127, 80, 0.447)
+    rgba(255, 127, 80, 0.42)
   );
   /* background: linear-gradient(45deg, #ffdab9, #ffb6c1, #ffdab9); */
   padding: 15px;
   transition: all 200ms ease-in;
 }
 
+.common-quote .quotation-marks {
+  color: black;
+  font-weight: 400;
+}
+
+.common-quote .author-name {
+  font-family: "Playfair Display", serif;
+  color: #ffffff;
+  text-shadow:1px 1px 5px rgba(255, 255, 255, 0.562);
+  /* background-color: #ffffff06; */
+  /*
+  padding: 0px 2px;
+  line-height: 18px;
+  border: 1px none rgba(255, 127, 80, 0.42);
+  border-radius: 5px; */
+  font-weight: 400;
+}
+
 .common-quote:hover {
-  scale: 1.08;
+  scale: 1.05;
+  border: 3px solid rgba(255, 127, 80, 0.3);
   box-shadow: 2px 2px 10px 0px rgba(255, 160, 122, 0.8);
 }
 
