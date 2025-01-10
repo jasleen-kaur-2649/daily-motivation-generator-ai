@@ -42,11 +42,34 @@ h1 {
   color: #ff6347;
 }
 
-button {
+
+input {
+  font-family: "Roboto", serif;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 127, 80, 0.42),
+    rgba(255, 99, 71, 0.682),
+    rgba(255, 127, 80, 0.42)
+  );
+  border: 1px solid rgba(255, 127, 80, 0.3);
+  border-radius: 20px;
+  color: #2c2c54;
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.562);
+  font-size: 13px;
+  width: 60%;
+  margin: 10px;
+  margin-right: 0px;
+  padding: 10px;
+  box-shadow: 2px 2px 5px 1px rgba(255, 127, 80, 0.4);
+}
+.generate-quote-button {
+  width: 20%;
+  font-family: "Roboto", serif;
+  font-weight: 400;
   background-color: #ff7f50;
+  /* max-width: 25%; */
   color: #ffffff;
   /* font-family: "Poopins", serif; */
-  font-weight: 100;
   transition: all 200ms ease-in-out;
   margin: 10px;
   padding: 10px;
@@ -54,7 +77,7 @@ button {
   border-radius: 18px;
   box-shadow: 2px 3px 5px 1px rgba(255, 127, 80, 0.612);
 }
-button:hover {
+.generate-quote-button:hover {
   background-color: #ff6347;
   border-color: #ff6347;
   box-shadow: 2px 3px 5px 1px rgba(255, 160, 122, 0.8);
@@ -108,7 +131,7 @@ h2 {
 .common-quote .author-name {
   font-family: "Playfair Display", serif;
   color: #ffffff;
-  text-shadow:1px 1px 5px rgba(255, 255, 255, 0.562);
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.562);
   /* background-color: #ffffff06; */
   /*
   padding: 0px 2px;
