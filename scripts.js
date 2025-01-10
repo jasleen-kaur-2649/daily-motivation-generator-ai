@@ -9,19 +9,16 @@ function generateQuote(event) {
   if (!quoteTopic) {
     context = `Imagine you are a motivational speaker, You share motivational quotes which inspires or motivates them emotionally,socially and physically, mentally to grow and live a happy and peaceful life also don't use "" these marks in the reply and should be of 4-5 lines only, tells only one quote at a time`;
     prompt = `Share a motivational quote with me`;
-  }
-  else {
+  } else {
     context = `Imagine you are a motivational speaker, You share motivational quotes which inspires or motivates them emotionally,socially and physically, mentally to grow and live a happy and peaceful life also don't use "" these marks in the reply and should be of 3-4 lines only NOT MORE THAN 4 , and tells quote related to the topic suggested by the user, don't forget to follow the user's instructions.`;
     prompt = `User's Topic: Generate a motivational quote on ${quoteTopic}`;
   }
 
   apiKey = `2d8o4b96bdta6ee065c85fc43853285d`;
   apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
-  
-  
+
   let hyphen = document.querySelector(".hyphen");
   hyphen.innerHTML = "";
-
 
   let quoteSection = document.querySelector(".quote-section");
   quoteSection.querySelector(".left").classList.add("hidden");
@@ -33,6 +30,7 @@ function generateQuote(event) {
   axios.get(apiUrl).then((response) => {
     // response.preventDefault();
     let newQuote = response.data.answer;
+
     quoteSection.querySelector(".left").classList.remove("hidden");
     quoteSection.querySelector(".right").classList.remove("hidden");
 
@@ -47,6 +45,7 @@ function generateQuote(event) {
       let newContext = `Imagine you are a motivational speaker, who is very Intelligent and knows the name of all the authors of the motivational quotes, replies with the name of the author only in two or three words if he doesn't know about the author name just writes Unknown instead `;
       let newPrompt = `Who wrote this quote: " ${newQuote}"?`;
       let newApiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${newPrompt}&context=${newContext}&key=${apiKey}`;
+
       axios.get(newApiUrl).then((reply) => {
         hyphen.innerHTML = "- ";
         let authorName = reply.data.answer;
